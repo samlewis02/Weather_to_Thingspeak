@@ -1,14 +1,10 @@
 /*
-BME280 I2C Test.ino
 
-This code shows how to record data from the BME280 environmental sensor
-using I2C interface. This file is an example file, part of the Arduino
-BME280 library.
+GET data from the BME280 environmental sensor
+using I2C interface. Get local weather from
+openweathermap.org. Send data to Thingspeak
 
-GNU General Public License
-
-Written: Dec 30 2015.
-Last Updated: Oct 07 2017.
+Written: APR 24 2019
 
 Connecting the BME280 Sensor:
 Sensor              ->  Board
@@ -32,10 +28,10 @@ SCK (Serial Clock)  ->  D1 on NodeMCU
 #include "getWeather.h"
 #include "parseJson.h"
 
-const char *ssid = "77Y-117144";
-const char *pass = "077190028";
-unsigned long myChNumber = 764823;
-const char *myWriteAPIKey = "NJPWC41VXUH27MAR";
+const char *ssid = "*********";
+const char *pass = "*********";
+unsigned long myChNumber = 123456;
+const char *myWriteAPIKey = "SDAFBRESAGNJR";
 
 WiFiClient client;
 
